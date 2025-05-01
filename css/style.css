@@ -6,9 +6,10 @@
 
 body {
   font-family: "PT Sans", sans-serif;
+  background-color: #ddd5ca;
 }
 .bg-body-tertiary {
-  background-color: rgb(255 255 255) !important;
+  background-color: rgb(221 213 202) !important;
 }
 :root {
   --mainColor: #7b5244;
@@ -771,20 +772,23 @@ h1.features-title {
 .product-info h3:hover {
   color: rgb(150, 32, 32);
 }
-
-
 /*******************/
 .discount2 {
   margin: 30px 0;
   display: flex;
   justify-content: center;
 }
-.discount-desc2{width: 48%;}
+.discount-desc2 {
+  width: 48%;
+}
 .discount-desc2 {
   padding: 20px;
   background: #f7f3ef;
   position: relative;
   left: 14px;
+}
+footer {
+  background: radial-gradient(black, transparent);
 }
 .discount-desc2 .top {
   position: relative;
@@ -832,6 +836,16 @@ h1.features-title {
   .discount-items2 {
     width: 30%;
   }
+  .special {
+    height: 6vh !important;
+}
+  footer .container {
+    max-width: 1110px !important;
+    width: 94%;
+}
+}
+.special {
+  gap: 28px;
 }
 .fa-lg:hover {
   color: #613424;
@@ -844,7 +858,7 @@ button.navbar-toggler {
   gap: 10px;
   flex-direction: row-reverse;
 }
-.dot3{
+.dot3 {
   width: 50px;
   height: 4px;
   background-color: var(--mainColor);
@@ -857,31 +871,31 @@ button.navbar-toggler {
 .discount-items2 {
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease;
 }
-.discount-items2:hover{
+.discount-items2:hover {
   transform: scale(1.1);
   box-shadow: 0 12px 25px rgba(58, 47, 9, 0.8);
 }
-.special-1p:hover{
+.special-1p:hover {
   transform: scale(1.1);
   box-shadow: 0 12px 25px rgba(58, 47, 9, 0.8);
 }
-.special-2p:hover{
+.special-2p:hover {
   transform: scale(1.1);
   box-shadow: 0 12px 25px rgba(58, 47, 9, 0.8);
 }
-.special-3p:hover{
+.special-3p:hover {
   transform: scale(1.1);
   box-shadow: 0 12px 25px rgba(58, 47, 9, 0.8);
 }
-.special-4p:hover{
+.special-4p:hover {
   transform: scale(1.1);
   box-shadow: 0 12px 25px rgba(58, 47, 9, 0.8);
 }
-.special-5p:hover{
+.special-5p:hover {
   transform: scale(1.1);
   box-shadow: 0 12px 25px rgba(58, 47, 9, 0.8);
 }
-.special{
+.special {
   display: flex;
   width: 99%;
   height: 13vh;
@@ -890,33 +904,51 @@ button.navbar-toggler {
   justify-content: center;
   flex-wrap: wrap;
 }
-.special-1p{
+.special-1p {
   background-image: url(../images/client1.png);
   width: 133px;
   background-repeat: no-repeat;
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease;
-} 
-.special-2p{
+}
+.special-2p {
   background-image: url(../images/client2.png);
   width: 125px;
   background-repeat: no-repeat;
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease;
 }
-.special-3p{
+.special-3p {
   background-image: url(../images/client3.png);
   width: 133px;
   background-repeat: no-repeat;
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease;
 }
-.special-4p{
+.special-4p {
   background-image: url(../images/client4.png);
   width: 133px;
   background-repeat: no-repeat;
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease;
 }
-.special-5p{
+.special-5p {
   background-image: url(../images/client5.png);
   width: 133px;
   background-repeat: no-repeat;
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease;
+}
+.col-md-3.text-white {
+  text-align: center;
+}
+
+.footer-wrapper * {
+  color: wheat;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: center;
+}
+.social1 i:hover {
+  color: goldenrod;
+  cursor: pointer;
+}
+.footer-wrapper *:hover {
+  color: goldenrod;
+  cursor: pointer;
 }

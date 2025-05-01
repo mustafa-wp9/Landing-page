@@ -7,12 +7,16 @@
 body {
   font-family: "PT Sans", sans-serif;
 }
-
+.bg-body-tertiary {
+    background-color: rgb(255 255 255) !important;
+}
 :root {
   --mainColor: #7b5244;
   --subColor: #333;
 }
-
+li {
+    font-weight: bold;
+}
 .container {
   width: 80%;
   margin: auto;
@@ -21,9 +25,18 @@ body {
 a {
   text-decoration: none;
 }
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: center;
+    }
+}
 
 .list-unstyled {
-  list-style: none;
+    list-style: none;
+    display: flex;
+    gap: 5px;
 }
 
 .section-padding {
@@ -188,6 +201,12 @@ section.slider img {
   line-height: 1.5;
 }
 
+.navbar-nav a {
+  padding: 10px 25px;
+  display: block;
+  font-weight: bold;
+  position: relative;
+}
 .dropdown-menu1 {
   position: absolute;
   background: #cec6b9;
@@ -529,16 +548,76 @@ left: 20px;
 }
 .sprite-icon-1 {
  background-position: center 5px;
+ transition: 0.5s;
 }
+.sprite-item:hover .sprite-icon-1 {
+  background-position: center -83px;
+}
+
 .sprite-icon-2 {
   background-position: center -175px;
+  transition: 0.5s;
  }
+ .sprite-item:hover .sprite-icon-2 {
+  background-position: center -269px;
+}
  .sprite-icon-3 {
   background-position: center -360px;
+  transition: 0.5s;
  }
+ .sprite-item:hover .sprite-icon-3 {
+  background-position: center -452px;
+}
  .sprite-icon-4 {
   background-position: center -543px;
+  transition: 0.5s;
  }
+ .sprite-item:hover .sprite-icon-4 {
+  background-position: center -639px;
+}
  .sprite-icon-5 {
   background-position: center -736px;
+  transition: 0.5s;
  }
+ .sprite-item:hover .sprite-icon-5 {
+  background-position: center -820px;
+}
+/*********/
+header .header-content {
+    display: none;}
+/*******/
+@media (max-width: 992px) {
+.slider .container {
+    max-width: 100% !important;
+    width: 100%;
+    padding: 0;
+}
+.navbar .container {
+    max-width: 100% !important;
+    width: 100%;
+}
+.dots1 {
+    transform: translate(50%);
+    left: -6px;
+}
+.category-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (max-width: 991px) {
+  button.navbar-toggler {
+    order: 1;
+  }
+.login {
+    margin-right: -50%;
+    display: flex;
+    font-size: 24px;
+    align-items: center !important;
+}
+.category .container {
+  max-width: 100% !important;
+  width: 100%;
+  margin-top: -4%;
+}
+}
